@@ -15,7 +15,7 @@ body {
     width: 75%;
 }
 
-.content > * {
+.content > textarea {
     width: 100%;
     margin: 0 auto;
 }
@@ -42,8 +42,55 @@ textarea {
     resize: none;
 }
 
-.button {
+.answers {
+    margin: 5% auto;
+    width: 75%;
+}
+
+.answer_header {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    color: #525763;
+
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.card {
+    margin: 10px auto;
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255,0.2);
+    border: 1px solid #bbbbbb;
+    border-radius: 20px;
+}
+
+.card>* {
+    color: #4A3B3B;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    transition: .2s;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    color: #333;
+    background-color: #333;
+    opacity: 0.1;
+}
+
+.ask {
     margin: 0 auto;
+}
+
+.answer {
+    float: right;
+}
+
+.button {
     display: block;
     text-decoration: none;
 
@@ -78,6 +125,9 @@ textarea {
     border-color: #4598b6;
 }
 
+#answer {
+    margin-top: 1.5%;
+}
 
 @media only screen and (max-height:900px) {
     .desc {

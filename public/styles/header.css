@@ -17,3 +17,8 @@
     font-size: 15px;
     margin: 10px;
 }
+
+.nodec, .nodec:visited, .nodec:active {
+    text-decoration: none;
+    color:white;
+}

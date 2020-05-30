@@ -28,7 +28,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1px 1px;
     grid-template-areas: "a b" "c d" "e f";
-    width: 35%;
+    width: 700px;
     margin: 0 auto;
 
 }
@@ -133,3 +133,14 @@ body {
         font-size: 40px;
     }
 }
+
+@media only screen and (max-width:750) {
+    .cards {
+        display: block;
+    }
+
+    .card {
+        width: 50%;
+    }
+}
+
