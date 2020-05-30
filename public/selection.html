@@ -55,10 +55,12 @@
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
         async function setPreferences() {
+            getSelected();
             var user = await firebase.auth().currentUser;
             var uid = user.uid;
             var userservice = new UserService();
-            userservice.updateUser(uid, 100, []);
+            userservice.updateUser(uid, 100, selected);
+            window.location = 'dashboard.html';
         }
         firebase.auth().onAuthStateChanged(function(user) {
             if (user) {
