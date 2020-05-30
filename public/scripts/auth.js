@@ -33,6 +33,9 @@ class AuthService {
         });
     }
     async logout() {
-        firebase.auth().signOut();
+        console.log("signed out");
+        firebase.auth().signOut().then(()=>{
+            window.location.href='login.html';
+        })
     }
 }
