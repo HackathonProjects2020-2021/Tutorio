@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('../type/wavehaus/stylesheet.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/walls/selection.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    display: block;
+    color: white;
+    font-family: 'Wavehaus 95';
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.points {
+    margin-top: 1%;
+    font-size: 60px;
+}
+
+.mycontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 4%;
+    width: 25%;
+}
+
+.htitle {
+    font-family: 'Wavehaus 95';
+    font-weight: 600;
+    margin-right: 5%;
+    font-style: normal;
+    text-align: center;
+    font-size: 50px;
+    color: #525763;
+}
+
+.addq {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #616774;
+}
+
+.addq:hover {
+    text-decoration: underline;
+    color: #3f434d;
+}
+
+.cards {
+    display: block;
+    margin: 20px auto;
+}
+
+.card {
+    margin: 10px auto;
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255,0.3);
+    border: 1px solid #bbbbbb;
+    border-radius: 20px;
+
+    width: 75%;
+}
+
+.question {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.25em;
+}
+
+.answers, .point-reward {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.point-reward {
+    color: #CB9220;
+}
+
+.svg {
+    color: #525763;
+}
+
+@media only screen and (max-height:900px) {
+    .points {
+        margin-top: 1%;
+        font-size: 40px;
+    }
+}
