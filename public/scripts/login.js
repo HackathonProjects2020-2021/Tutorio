@@ -40,6 +40,9 @@ function login() {
 
 }
 
-function logout() {
-    firebase.auth().signOut();
-}
+// function logout() {
+//     //  firebase.auth().signOut();
+//         firebase.auth().signOut().then(() => {
+//             console.log("User is Signed Out!!!");
+//         })
+// }
