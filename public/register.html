@@ -22,14 +22,12 @@
     <form action="" id="mainform">   
         <input type="text" name="email" id=email"">
         <p>email address</p>
-        <input type="text" name="username" id="username">
-        <p>username</p>
         <input type="text" name="password" id="password">
         <p>password</p>
         <input type="text" name="password" id="password">
         <p>confirm password</p>
     </form>
-    <a class="button inverted" onclick="signup()" id="signup" href="#">sign up</a>
+    <a class="button inverted" onclick="signup()" id="signup">sign up</a>
 
     <script>
         // Your web app's Firebase configuration
@@ -46,6 +44,8 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
+        const auth =firebase.auth();
     </script>
+    <script src="auth.js"></script>
 </body>
 </html>
