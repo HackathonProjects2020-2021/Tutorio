@@ -19,9 +19,9 @@ class AuthService {
         userService.updateUser(user.uid, 1000);
         return new User(user.uid, 1000);*/
     }
-    login() {
+    async login() {
         var userEmail = document.getElementById("email").value;
-        var userPass = document.getElementById("password").value;
+        var userPass = document.getElementById("pass").value;
     
         return await firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function (error) {
             // Handle Errors here.
@@ -32,7 +32,10 @@ class AuthService {
             // ...
         });
     }
-    logout() {
-        firebase.auth().signOut();
+    async logout() {
+        console.log("signed out");
+        firebase.auth().signOut().then(()=>{
+            window.location.href='login.html';
+        })
     }
 }

@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="styles/header.css" class="css">
 
-    <script src="scripts/auth.js"></script>
     <script src="scripts/user.js"></script>
     <script src="scripts/userservice.js"></script>
     <script src="scripts/auth.js"></script>
@@ -27,7 +26,7 @@
         <input type="password" name="password" id="pass">
 
         <p>password</p>
-        <a class="button inverted login" href="#" onclick="signIn()">sign in</a>
+        <a class="button inverted login" href="#" onclick="login()">sign in</a>
     </form>
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
 
@@ -54,9 +53,9 @@
         firebase.analytics();
         async function login() {
             var service = new AuthService();
-            var result = await service.logIn();
+            var result = await service.login();
             if (result) {
-                window.location = 'selection.html';
+                window.location = 'dashboard.html';
             }
         }
         
