@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In | Tutorio</title>
 
+
     <link rel="stylesheet" href="styles/header.css" class="css">
+
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/user.js"></script>
+    <script src="scripts/userservice.js"></script>
+    <script src="scripts/auth.js"></script>
+  
     <link rel="stylesheet" href="styles/register.css" class="css">
 </head>
 <body>
@@ -15,11 +22,45 @@
     <div class="maintext">Welcome Back!</div>
     <div class="spacer"></div>
     <form action="" id="mainform">
-        <input type="text" name="email" id=email"">
+        <input type="text" name="email" id="email">
         <p>email address</p>
         <input type="password" name="password" id="pass">
+
         <p>password</p>
-        <a class="button inverted login" href="#">sign up</a>
+        <a class="button inverted login" href="#" onclick="signIn()">sign in</a>
     </form>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAQRMa3o1JDpxJrA4xAk-voxHR1jIDZjtQ",
+            authDomain: "teenhackhtx-application.firebaseapp.com",
+            databaseURL: "https://teenhackhtx-application.firebaseio.com",
+            projectId: "teenhackhtx-application",
+            storageBucket: "teenhackhtx-application.appspot.com",
+            messagingSenderId: "535069797709",
+            appId: "1:535069797709:web:cf4361c71ff094b8c85b04",
+            measurementId: "G-2VGX0V4SR2"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        async function login() {
+            var service = new AuthService();
+            var result = await service.logIn();
+            if (result) {
+                window.location = 'selection.html';
+                await service.logIn();
+            }
+        }
+        
+    </script>
 </body>
 </html>
