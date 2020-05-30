@@ -23,18 +23,14 @@ class AuthService {
         var userEmail = document.getElementById("email").value;
         var userPass = document.getElementById("password").value;
     
-        firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function (error) {
+        return await firebase.auth().signInWithEmailAndPassword(userEmail, userPass).catch(function (error) {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
     
             window.alert("Error : " + errorMessage);
-            return null;
             // ...
         });
-        var user = firebase.auth().currentUser;
-        var userService = new UserSerivce();
-        return new User(user.uid, userService.getPoints(user.uid));
     }
     logout() {
         firebase.auth().signOut();
