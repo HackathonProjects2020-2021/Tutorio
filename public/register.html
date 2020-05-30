@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account | Tutorio</title>
+    <script src="scripts/user.js"></script>
+    <script src="scripts/userservice.js"></script>
     <script src="scripts/auth.js"></script>
     <link rel="stylesheet" href="styles/register.css" class="css">
 </head>
@@ -46,11 +48,14 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
         firebase.analytics();
-        function register() {
+        async function register() {
             var service = new AuthService();
-            service.register();
+            var result = await service.register();
+            if (result) {
+                window.location = 'selection.html';
+                await service.logIn();
+            }
         }
-        
     </script>
 </body>
 </html>
