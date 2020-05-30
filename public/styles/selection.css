@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('../type/wavehaus/stylesheet.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/walls/selection.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    display: block;
+    color: white;
+    font-family: 'Wavehaus 95';
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.desc {
+    margin-top: 2%;
+    font-size: 50px;
+}
+
+.choose {
+    font-family: 'Wavehaus 95';
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    font-size: 45px;
+    color: #525763;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "a b" "c d" "e f";
+    width: 35%;
+    margin: 0 auto;
+
+}
+
+.card {
+    margin: 10px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255,0.34);
+    border: 1px solid #707070;
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.card>* {
+    color: #4A3B3B;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    transition: .2s;
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+.d {
+    grid-area: d;
+}
+
+.e {
+    grid-area: e;
+}
+
+.f {
+    grid-area: f;
+}
+
+.selected { 
+    border: 1px solid #5c6fdb;
+    transition: .2s;
+}
+
+.selected > * {
+    color: #5c6fdb;
+    transition: 0.2s;
+}
+
+.button {
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+
+    color: #FFF;
+    background-color: #5DC4EB;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #5DC4EB;
+    border-radius: 20px;
+
+    width: 150px;
+    transition: 0.25s;
+    
+    margin-top: 2.5%;
+
+}
+
+.button:hover,
+.button:visited:hover {
+    transition: .25s;
+    color: #FFF;
+    background-color: #4fadcf;
+    border-color: #4fadcf;
+}
+
+.button:active,
+.button:visited:active {
+    color: #FFF;
+    background-color: #4598b6;
+    border-color: #4598b6;
+}
+
+@media only screen and (max-height:750px) {
+    .desc {
+        margin-top: 1%;
+        font-size: 40px;
+    }
+}
