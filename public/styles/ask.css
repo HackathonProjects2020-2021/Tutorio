@@ -1,0 +1,137 @@
+body {
+    background-image: url('../assets/walls/selection.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.desc {
+    margin-top: 1%;
+    font-size: 60px;
+}
+
+.content {
+    margin: 5% auto;
+    width: 75%;
+}
+
+.content > textarea {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.prompt {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+    color: #525763;
+    margin-bottom: 1%;
+    margin-left: 0.1%;
+}
+
+textarea {
+    font-family: 'Work Sans', sans-serif;
+
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.5em;
+
+    background-color: rgba(255, 255, 255,0.2);
+    color: #525763;
+
+    outline: none;
+    resize: none;
+}
+
+.answers {
+    margin: 5% auto;
+    width: 75%;
+}
+
+.answer_header {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    color: #525763;
+
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.card {
+    margin: 10px auto;
+    padding: 20px;
+
+    background-color: rgba(255, 255, 255,0.2);
+    border: 1px solid #bbbbbb;
+    border-radius: 20px;
+}
+
+.card>* {
+    color: #4A3B3B;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    transition: .2s;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    color: #333;
+    background-color: #333;
+    opacity: 0.1;
+}
+
+.ask {
+    margin: 0 auto;
+}
+
+.answer {
+    float: right;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+
+    color: #FFF;
+    background-color: #5DC4EB;
+    padding: 15px;
+    text-align: center;
+    border: 2px solid #5DC4EB;
+    border-radius: 20px;
+
+    width: 300px;
+    transition: 0.25s;
+    margin-top: 20px;
+
+}
+
+.button:hover,
+.button:visited:hover {
+    transition: .25s;
+    color: #FFF;
+    background-color: #4fadcf;
+    border-color: #4fadcf;
+}
+
+.button:active,
+.button:visited:active {
+    color: #FFF;
+    background-color: #4598b6;
+    border-color: #4598b6;
+}
+
+#answer {
+    margin-top: 1.5%;
+}
+
+@media only screen and (max-height:900px) {
+    .desc {
+        margin-top: 1%;
+        font-size: 40px;
+    }
+}

@@ -1,27 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
-@import url('../type/wavehaus/stylesheet.css');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     background-image: url('../assets/walls/selection.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.header {
-    display: block;
-    color: white;
-    font-family: 'Wavehaus 95';
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-    font-size: 15px;
-    margin: 10px;
 }
 
 .desc {
@@ -46,7 +28,7 @@ body {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1px 1px;
     grid-template-areas: "a b" "c d" "e f";
-    width: 35%;
+    width: 700px;
     margin: 0 auto;
 
 }
@@ -151,3 +133,14 @@ body {
         font-size: 40px;
     }
 }
+
+@media only screen and (max-width:750) {
+    .cards {
+        display: block;
+    }
+
+    .card {
+        width: 50%;
+    }
+}
+
