@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('../type/wavehaus/stylesheet.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/walls/welcome.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    display: block;
+    color: white;
+
+    font-family: 'Wavehaus 95';
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+
+    font-size: 15px;
+    margin: 10px;
+}
+
+.hero {
+    display: block;
+    margin-top: 90px;
+    margin-left: 90px;
+}
+
+.herotext {
+    color: white;
+    font-size: 70px;
+
+    font-family: 'Wavehaus 95';
+    font-weight: 600;
+    font-style: normal;
+
+    padding-bottom: 50px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+
+    color: #FFF;
+    background-color: #5DC4EB;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #5DC4EB;
+    border-radius: 20px;
+
+    width: 150px;
+    transition: 0.25s;
+
+    margin-right: 20px;
+}
+
+.button:hover,
+.button:visited:hover {
+    transition: .25s;
+    color: #FFF;
+    background-color: #4fadcf;
+    border-color: #4fadcf;
+}
+
+.button:active,
+.button:visited:active {
+    color: #FFF;
+    background-color: #4598b6;
+    border-color: #4598b6;
+}
+
+.inverted {
+    color: #5DC4EB;
+    background-color: #525763;
+    border: 2px solid #5DC4EB;
+}
+
+.inverted:hover,
+.inverted:visited:hover {
+    transition: .25s;
+    color: #FFF;
+    background-color: #5DC4EB;
+    border-color: #5DC4EB;
+}
+
+.inverted:active,
+.inverted:visited:active {
+    color: #FFF;
+    background-color: #4fadcf;
+    border-color: #4fadcf;
+}
+
+.footer {
+    background-color: #F4EFE9;
+
+    position: absolute;
+    bottom: 0;
+    display: block;
+
+    padding: 5%;
+    width: 100%;
+}
+
+.finaltext {
+    color: #525763;
+
+    font-family: 'Wavehaus 95';
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    font-size: 60px;
+}

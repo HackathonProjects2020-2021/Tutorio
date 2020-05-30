@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title href="index.html">Tutorio</title>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <title>Create Account | Tutorio</title>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
@@ -13,24 +12,24 @@
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
 
-    <link rel="stylesheet" href="styles/welcome.css" class="css">
-
+    <link rel="stylesheet" href="styles/register.css" class="css">
 </head>
-
 <body>
     <div class="header">    
         <h1 class="title">TUTORIO</h1>
     </div>
-    <div class="hero">
-        <div class="herotext">Welcome to<br>Tutorio</div>
-        <a class="button register" href="Register.html">sign up</a>
-        <a class="button inverted" href="Login.html">log in</a>
-    </div>
-    <div class="footer">
-        <h1 class="finaltext">
-            Answer Questions. Get Points.
-        </h1>
-    </div>
+    <div class="maintext">Create Account!</div>
+    <form action="" id="mainform">   
+        <input type="text" name="email" id=email"">
+        <p>email address</p>
+        <input type="text" name="username" id="username">
+        <p>username</p>
+        <input type="text" name="password" id="password">
+        <p>password</p>
+        <input type="text" name="password" id="password">
+        <p>confirm password</p>
+    </form>
+    <a class="button inverted" onclick="signup()" id="signup" href="#">sign up</a>
 
     <script>
         // Your web app's Firebase configuration
@@ -49,5 +48,4 @@
         firebase.analytics();
     </script>
 </body>
-
 </html>

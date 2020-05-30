@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('../type/wavehaus/stylesheet.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../assets/walls/register.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    display: block;
+    color: white;
+
+    font-family: 'Wavehaus 95';
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+
+    font-size: 15px;
+    margin: 10px;
+}
+
+.maintext {
+    color: white;
+    font-size: 70px;
+
+    font-family: 'Wavehaus 95';
+    font-weight: 600;
+    font-style: normal;
+
+    padding-bottom: 50px;
+
+    text-align: center;
+
+    margin-top: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin: 75px auto;
+}
+
+input {
+    margin: 0;
+    padding-top: 5px;
+    border: 0;
+    height: 40px;
+
+    color: white;
+
+    background: none;
+    outline: none;
+
+    background: transparent;
+    border-bottom: 3px solid white;
+    border-spacing: 10px;
+
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+
+}
+
+form > p {
+    font-family: 'Work Sans', sans-serif;
+    color: #FFFFFF;
+    margin-top: 5px;
+    margin-bottom: 10%;
+}
+
+.button {
+    display: block;
+    text-decoration: none;
+
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+
+    color: #FFF;
+    background-color: #5DC4EB;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #5DC4EB;
+    border-radius: 20px;
+
+    width: 150px;
+    transition: 0.25s;
+
+    margin: 0 auto;
+}
+
+.button:hover,
+.button:visited:hover {
+    transition: .25s;
+    color: #FFF;
+    background-color: #4fadcf;
+    border-color: #4fadcf;
+}
+
+.button:active,
+.button:visited:active {
+    color: #FFF;
+    background-color: #4598b6;
+    border-color: #4598b6;
+}
+
+.inverted {
+    color: #5DC4EB;
+    background-color: #f8f7f6;
+    border: 2px solid #91d3eb;
+}
+
+.inverted:hover,
+.inverted:visited:hover {
+    transition: .25s;
+    color: #f8f7f6;
+    background-color: #5DC4EB;
+    border-color: #91d3eb;
+}
+
+.inverted:active,
+.inverted:visited:active {
+    color: #f8f7f6;
+    background-color: #4fadcf;
+    border-color: #91d3eb;
+}
+
+.spacer {
+    font-size: 0; 
+    height: 10px;
+    line-height: 0;
+}
+
+@media only screen and (max-width: 1600px) {
+    form {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        width: 75%;
+    }
+}
